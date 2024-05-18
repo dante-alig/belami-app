@@ -20,7 +20,7 @@ async function main() {
     // Création d'un nouveau thread
     const thread = await openai.beta.threads.create();
 
-    // Envoi d'un message utilisateur dans le thread
+    // Envoi d'une image dans le thread
     await openai.beta.threads.messages.create(thread.id, {
       role: "user",
       content: [
